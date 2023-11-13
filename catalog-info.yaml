@@ -28,6 +28,9 @@ spec:
   type: service
   lifecycle: production
   owner: "user:default/blues-man"
+  consumesApis:
+  - photo-generator-genai
+
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
