@@ -28,3 +28,20 @@ spec:
   type: service
   lifecycle: production
   owner: "user:default/blues-man"
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: photo-generator-genai
+  description: API invoked to create images of Red Hat Teddy
+  links:
+    - url: https://editor.swagger.io/
+      title: Swagger UI
+      icon: web
+    - url: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/json/api-with-examples.json
+      title: API Spec
+      icon: code
+spec:
+  type: openapi
+  lifecycle: production
+  owner: "user:default/blues-man"
