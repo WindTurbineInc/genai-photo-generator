@@ -10,7 +10,7 @@ COPY --chown=default:root ./frontend/__mocks__ ./__mocks__
 RUN npm install
 RUN npm run build
 
-FROM registry.access.redhat.com/ubi9/python-39:1-108
+FROM registry.access.redhat.com/ubi9/python-39:1-197.1725907694
 WORKDIR /projects
 #RUN mkdir -p frontend
 COPY --from=build-step /projects/dist ./frontend/dist
